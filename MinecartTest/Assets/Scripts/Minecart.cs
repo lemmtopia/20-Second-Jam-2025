@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Minecart : MonoBehaviour
@@ -17,7 +18,8 @@ public class Minecart : MonoBehaviour
 
     private void Start()
     {
-        
+        _canMove = true;
+        GameManager.OnMaxTimeReached += GameManager_OnMaxTimeReached;
     }
 
     private void Update()
@@ -50,5 +52,10 @@ public class Minecart : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         _canMove = true;
+    }
+
+    private void GameManager_OnMaxTimeReached(object sender, EventArgs e)
+    {
+        _canMove = false;
     }
 }

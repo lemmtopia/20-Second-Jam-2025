@@ -3,7 +3,7 @@ using UnityEngine;
 public class Minecart : MonoBehaviour
 {
     [SerializeField] private GameObject _endGoal;
-    private float _moveSpeed = 3f;
+    private float _moveSpeed = 1f;
     private bool _canMove = true;
 
     private Rigidbody2D _rb;

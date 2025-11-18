@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d03ed105e6ba094ebc3af1ba62f3048
+guid: ce5d3cb4f714c6f4f9a7aebcbb221a22
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1309158792645468770
-    second: Minecart_0
+      213: -6247887367827206336
+    second: Minecart2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Minecart_0
+      name: Minecart2_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 4
-        width: 26
-        height: 20
+        x: 0
+        y: 0
+        width: 252
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e9d99c9a30fe4dde0800000000000000
-      internalID: -1309158792645468770
+      spriteID: 04f420caa8b0b49a0800000000000000
+      internalID: -6247887367827206336
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Minecart_0: -1309158792645468770
+      Minecart2_0: -6247887367827206336
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

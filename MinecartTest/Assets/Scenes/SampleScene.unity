@@ -1077,12 +1077,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1309158792645468770, guid: 5d03ed105e6ba094ebc3af1ba62f3048, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce5d3cb4f714c6f4f9a7aebcbb221a22, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.8125, y: 0.625}
+  m_Size: {x: 1.63125, y: 1.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1620,6 +1620,22 @@ PrefabInstance:
     - target: {fileID: 7136343319892992024, guid: 5bc9afd7e548811409187cb7876e1d00, type: 3}
       propertyPath: m_Name
       value: Minecart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931737386606264321, guid: 5bc9afd7e548811409187cb7876e1d00, type: 3}
+      propertyPath: m_Size.x
+      value: 2.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931737386606264321, guid: 5bc9afd7e548811409187cb7876e1d00, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8931737386606264321, guid: 5bc9afd7e548811409187cb7876e1d00, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ce5d3cb4f714c6f4f9a7aebcbb221a22, type: 3}
+    - target: {fileID: 8931737386606264321, guid: 5bc9afd7e548811409187cb7876e1d00, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

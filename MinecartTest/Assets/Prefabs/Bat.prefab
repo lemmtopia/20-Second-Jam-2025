@@ -111,7 +111,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _minecart: {fileID: 0}
-  _moveSpeed: 4
 --- !u!1 &7596206825152957757
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,12 +187,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 8647823593821616703, guid: 0f1813ef620546648b7c333715ff66a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f1813ef620546648b7c333715ff66a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.8125, y: 0.625}
+  m_Size: {x: 1.6, y: 1.125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

@@ -9,7 +9,7 @@ public class Bat : MonoBehaviour
     private Rigidbody2D _rb;
     private bool _isHovered;
 
-    private const float _MAX_DISTANCE_TO_MINECART = 0.8f;
+    private const float _MAX_DISTANCE_TO_MINECART = 1.2f;
 
     private void Awake()
     {
@@ -18,17 +18,20 @@ public class Bat : MonoBehaviour
 
     private void Update()
     {
+        if (_isHovered && Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    private void FixedUpdate()
+    {
         Vector2 direction = (_minecart.transform.position - transform.position).normalized;
         float distance = Vector3.Distance(_minecart.transform.position, transform.position);
 
         if (distance >= _MAX_DISTANCE_TO_MINECART)
         {
             Move(direction);
-        }
-
-        if (_isHovered && Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            Destroy(this.gameObject);
         }
     }
 

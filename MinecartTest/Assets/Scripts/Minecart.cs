@@ -3,9 +3,12 @@ using UnityEngine;
 
 public class Minecart : MonoBehaviour
 {
+    public static event EventHandler OnMinecartArrived;
+
     [SerializeField] private GameObject _endGoal;
     private float _moveSpeed = 1f;
     private bool _canMove = true;
+    private bool _hasArrived = false;
 
     private Rigidbody2D _rb;
 
@@ -24,15 +27,22 @@ public class Minecart : MonoBehaviour
 
     private void Update()
     {
-        if (_canMove)
-        {
-            Move(Vector2.right);
-        }
-
-        if (Vector3.Distance(transform.position, _endGoal.transform.position) <= _MIN_DISTANCE_TO_END_GOAL)
+        if (!_hasArrived && Vector3.Distance(transform.position, _endGoal.transform.position) <= _MIN_DISTANCE_TO_END_GOAL)
         {
             _canMove = false;
             transform.position = _endGoal.transform.position;
+
+            OnMinecartArrived?.Invoke(this, EventArgs.Empty);
+
+            _hasArrived = true;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (_canMove)
+        {
+            Move(Vector2.right);
         }
     }
 

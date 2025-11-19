@@ -12,6 +12,15 @@ if (canMove && !hasArrived)
 		IncreaseTimer();
 	}
 }
+else
+{
+	hsp = 0;	
+}
+
+if (place_meeting(x, y, oBat))
+{
+	hsp = 0;
+}
 
 if (global.levelTimer >= global.levelTimerMax)
 {

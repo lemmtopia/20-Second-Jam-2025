@@ -13,3 +13,8 @@ function Reset()
 {
 	global.levelTimer = 0;
 }	
+
+function GetTimeRemaining()
+{
+	return global.levelTimerMax - global.levelTimer;	
+}

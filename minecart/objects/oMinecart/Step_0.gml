@@ -17,7 +17,9 @@ else
 	hsp = 0;	
 }
 
-if (place_meeting(x, y, oBat))
+var _distanceToPlayer = point_distance(x, y, oPlayer.x, oPlayer.y);
+var _distanceToPlayerMin = 32;
+if (place_meeting(x, y, oBat) || _distanceToPlayer > _distanceToPlayerMin)
 {
 	hsp = 0;
 }
